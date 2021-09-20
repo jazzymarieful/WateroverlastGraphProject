@@ -5,7 +5,7 @@ public class SettlementEdge {
     public int srcVert;
     public int destVert;
     public int distance;
-    public final int originalDist; // zou final kunnen zijn, word nooit meer aangepast na eerste keer
+    public final int originalDist;
     public boolean isEdgeAdjusted;
 
     public SettlementEdge(int sv, int dv, int oD) {

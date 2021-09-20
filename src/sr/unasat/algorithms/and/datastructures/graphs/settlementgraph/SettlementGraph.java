@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class SettlementGraph {
 
     private final int MAX_VERTS;
-    private final int INFINITY = 10000; //is op 10000 voor veilgere shortest path
+    private final int INFINITY = 10000;
     private SettlementVertex settlementVertexList[];
     private int adjMatrix[][];
     public SettlementEdge edgeList[];
@@ -667,7 +667,6 @@ public class SettlementGraph {
             pathCount++;
             adjustShortestPath();
         }
-//        displayPaths();
         displayPath(startingSettlement, destinationSettlement);
         pathCount = 0;
         for(int index = 0; index< vertexCount; index++) {
@@ -770,7 +769,7 @@ public class SettlementGraph {
                 System.out.print(settlementVertexList[index].settlement.getName() + " through the shortest route");
                 System.out.print(" with a cost of ");
                 if(shortestPath[index].distance == INFINITY) {
-                    System.out.print("inf, ");
+                    System.out.print("0, ");
                 }
                 else {
                     System.out.print(shortestPath[index].distance + ", ");
@@ -816,9 +815,6 @@ public class SettlementGraph {
             longestPath[index] = new DistanceParent(0, tempDistance);
         }
 
-//        System.out.println(Arrays.toString(longestPath));
-//        System.out.println("");
-
         while(pathCount < vertexCount) {
             int indexOfVertexWithMaxDistance = getIndexOfVertexWithMaxDistance();
             int maxDistance = longestPath[indexOfVertexWithMaxDistance].distance;
@@ -833,7 +829,6 @@ public class SettlementGraph {
             pathCount++;
             adjustLongestPath();
         }
-//        displaylongestPaths();
         displayLongestPath(startingVertex, destinationVertex);
         pathCount = 0;
         for(int index = 0; index< vertexCount; index++) {
@@ -873,8 +868,6 @@ public class SettlementGraph {
             }
             column++;
         }
-//        System.out.println(Arrays.toString(longestPath));
-//        System.out.println("");
     }
 
     public void displayAllLongestPaths() {
@@ -920,7 +913,7 @@ public class SettlementGraph {
                 System.out.print(settlementVertexList[index].settlement.getName() + " through the longest route");
                 System.out.print(" with a cost of ");
                 if(longestPath[index].distance == INFINITY) {
-                    System.out.print("inf");
+                    System.out.print("0");
                 }
                 else {
                     System.out.print(longestPath[index].distance + ", ");

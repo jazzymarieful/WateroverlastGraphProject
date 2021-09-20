@@ -6,7 +6,7 @@ public class Weatherstation {
     private double rainfall;
     private String location;
     private boolean alarmThresholdBreach = false;
-    public static int maxVert;
+    public static int weatherStationAmount;
 
     private double infiltrationStandard = 3.0;
     private int timeInterval;
@@ -23,7 +23,7 @@ public class Weatherstation {
     private boolean isDryDurationSet = true;
 
     public Weatherstation(String name, String location) {
-        maxVert++;
+        weatherStationAmount++;
         this.name = name;
         this.location = location;
     }
@@ -52,6 +52,9 @@ public class Weatherstation {
 
 
 
+
+
+
     //    public void setRainfallAdvanced(double incomingRainfall) {
 //        double actualIncoming = 0.0;
 //        if (timeInterval <= dryInterval) {
@@ -76,54 +79,54 @@ public class Weatherstation {
 //        }
 
 //    }
-    public void setRainLevel(double incomingRainfall) {
-        double actualIncoming;
-        if (checkDryOrRain()) {
-            actualIncoming = 0.0;
-        } else {
-            actualIncoming = incomingRainfall;
-        }
-        double currentRainfall = rainfall + actualIncoming;
-        timeInterval++;
-        if (timeInterval == 12) {
-            beginInfiltrationInterval = true;
-        }
-        if (beginInfiltrationInterval && (timeInterval == infiltrationInterval)) {
-            infiltrationInterval += 2;
-            this.rainfall =currentRainfall - infiltrationStandard;
-            checkRainfallThreshold();
-        } else {
-            this.rainfall = currentRainfall;
-            checkRainfallThreshold();
-        }
-
-    }
-    public boolean checkDryOrRain() {
-        if (!isDryDurationSet) {  // is false
-            if (!isRainDurationSet) { //is false
-                rainDuration = 5;
-                isRainDurationSet = true;
-            }
-            if (rainInterval == rainDuration) {
-                rainInterval = 0;
-                isRainDurationSet = false;
-                isDryDurationSet = true;
-            } else {
-                rainInterval++;
-                return false;
-            }
-        }
-        if (dryInterval2 == 12) {
-            dryInterval2 = 0;
-            isDryDurationSet = false;
-            isRainDurationSet = true;
-        } else {
-            dryInterval2++;
-            return true;
-        }
-        return false;
-
-    }
+//    public void setRainLevel(double incomingRainfall) {
+//        double actualIncoming;
+//        if (checkDryOrRain()) {
+//            actualIncoming = 0.0;
+//        } else {
+//            actualIncoming = incomingRainfall;
+//        }
+//        double currentRainfall = rainfall + actualIncoming;
+//        timeInterval++;
+//        if (timeInterval == 12) {
+//            beginInfiltrationInterval = true;
+//        }
+//        if (beginInfiltrationInterval && (timeInterval == infiltrationInterval)) {
+//            infiltrationInterval += 2;
+//            this.rainfall =currentRainfall - infiltrationStandard;
+//            checkRainfallThreshold();
+//        } else {
+//            this.rainfall = currentRainfall;
+//            checkRainfallThreshold();
+//        }
+//
+//    }
+//    public boolean checkDryOrRain() {
+//        if (!isDryDurationSet) {  // is false
+//            if (!isRainDurationSet) { //is false
+//                rainDuration = 5;
+//                isRainDurationSet = true;
+//            }
+//            if (rainInterval == rainDuration) {
+//                rainInterval = 0;
+//                isRainDurationSet = false;
+//                isDryDurationSet = true;
+//            } else {
+//                rainInterval++;
+//                return false;
+//            }
+//        }
+//        if (dryInterval2 == 12) {
+//            dryInterval2 = 0;
+//            isDryDurationSet = false;
+//            isRainDurationSet = true;
+//        } else {
+//            dryInterval2++;
+//            return true;
+//        }
+//        return false;
+//
+//    }
 
     @Override
     public String toString() {

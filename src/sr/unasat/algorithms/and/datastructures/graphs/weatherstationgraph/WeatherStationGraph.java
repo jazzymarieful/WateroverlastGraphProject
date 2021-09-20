@@ -1,8 +1,6 @@
 package sr.unasat.algorithms.and.datastructures.graphs.weatherstationgraph;
 
 import sr.unasat.algorithms.and.datastructures.locations.Weatherstation;
-import sr.unasat.algorithms.and.datastructures.tools.GraphQueue;
-import sr.unasat.algorithms.and.datastructures.tools.GraphStack;
 import sr.unasat.algorithms.and.datastructures.graphs.settlementgraph.SettlementGraph;
 import sr.unasat.algorithms.and.datastructures.tools.ObjectQueue;
 
@@ -17,7 +15,7 @@ public class WeatherStationGraph {
     private SettlementGraph sg;
 
     public WeatherStationGraph(SettlementGraph sg) {
-        MAX_VERTS = Weatherstation.maxVert;
+        MAX_VERTS = Weatherstation.weatherStationAmount;
         weatherStationVertexList = new WeatherStationVertex[MAX_VERTS];
         adjMatrix = new int[MAX_VERTS][MAX_VERTS];
         vertexCount = 0;

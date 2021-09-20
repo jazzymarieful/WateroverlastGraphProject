@@ -21,7 +21,7 @@ public class RainfallProducer {
     }
 
     public double[] generateRandomRainfall() {
-        int weatherStationCount = Weatherstation.maxVert;
+        int weatherStationCount = Weatherstation.weatherStationAmount;
         double[] rainfallByStation = new double[weatherStationCount];
         int rainfallByStationCount = 0;
         double minAmount = 10.0;
