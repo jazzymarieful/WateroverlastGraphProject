@@ -1,0 +1,91 @@
+//        settlementGraph.addVertex(pokigron);        //0
+//        settlementGraph.addVertex(botopasi);        //1
+//        settlementGraph.addVertex(djumu);           //2
+//        settlementGraph.addVertex(pusugrunu);       //3
+//        settlementGraph.addVertex(nyunJacobKondre); //4
+//        settlementGraph.addVertex(langatabiki);     //5
+//        settlementGraph.addVertex(stoelmansEiland); //6
+//        settlementGraph.addVertex(dritabiki);       //7
+//        settlementGraph.addVertex(godoOlo);         //8
+//        settlementGraph.addVertex(benzdorp);        //9
+//        settlementGraph.addVertex(apura);           //10
+//        settlementGraph.addVertex(avanavero);       //11
+//        settlementGraph.addVertex(kabalebo);        //12
+//        settlementGraph.addVertex(kwamalasamutu);   //13
+//        settlementGraph.addVertex(sipaliwini);      //14
+//        settlementGraph.addVertex(alalapadu);       //15
+//        settlementGraph.addVertex(amotopo);         //16
+//        settlementGraph.addVertex(apetina);         //17
+//        settlementGraph.addVertex(palumeu);         //18
+//        settlementGraph.addVertex(peleletepu);      //19
+//        settlementGraph.addVertex(ulemari);         //20
+//        settlementGraph.addVertex(tafelberg);       //21
+//        settlementGraph.addVertex(kayserberg);      //22
+//        settlementGraph.addVertex(paramaribo);      //23
+
+ Settlement pokigron = new Settlement("Pokigron", 2000, "4.53,-55.39");
+//        Settlement botopasi = new Settlement("Botopasi", 750, "4.22,-55.44");
+//        Settlement djumu = new Settlement("Djumu", 1000, "4.01,-55.47");
+//        Settlement pusugrunu = new Settlement("Pusugrunu", 600, "4.39,-55.78");
+//        Settlement nyunJacobKondre = new Settlement("Nyun JacobKondre", 500, "4.94,-55.54");
+
+//        Settlement langatabiki = new Settlement("Langatabiki", 1100, "4.99,-54.44");
+//        Settlement stoelmansEiland = new Settlement("Stoelmanseiland", 5000, "4.35,-54.40");
+//        Settlement dritabiki = new Settlement("Dritabiki", 500, "4.12,-54.62");
+//        Settlement godoOlo = new Settlement("Godo Olo", 600, "4.06,-54.79");
+//        Settlement benzdorp = new Settlement("Benzdorp", 400, "3.67,-54.09");
+
+//        Settlement apura = new Settlement("Apura", 2400, "5.18,-57.17");
+//        Settlement avanavero  = new Settlement("Avanavero", 350, "4.83,-57.29");
+//        Settlement kabalebo = new Settlement("Kabalebo", 80, "4.41,-57.22");
+
+//        Settlement kwamalasamutu = new Settlement("Kwamalasamutu", 1500, "2.36,-56.79");
+//        Settlement sipaliwini = new Settlement("Sipaliwini", 300, "2.02,-56.12");
+//        Settlement alalapadu = new Settlement("Alalapadu", 400, "2.52,-56.33");
+//        Settlement amotopo = new Settlement("Amotopo", 300, "3.55,-57.64");
+
+//        Settlement apetina = new Settlement("Apetina", 800, "3.51,-55.05");
+//        Settlement palumeu = new Settlement("Palumeu", 900, "3.34,-55.44");
+//        Settlement peleletepu = new Settlement("Peleletepu", 1100, "3.16,-55.72");
+//        Settlement ulemari = new Settlement("Ulemari", 250, "3.10,-54.54");
+
+//        Settlement tafelberg = new Settlement("Tafelberg", 20, "3.79,-56.15");
+//        Settlement kayserberg = new Settlement("Kayserberg", 10, "3.09,-56.47");
+
+//        Settlement paramaribo = new Settlement("Paramaribo", 241000, "5.81,-55.17");
+
+
+        //Weatherstation objecten aanmaken
+//        Weatherstation apu2 = new Weatherstation("Apu2", "4.99,-57.20");
+//        Weatherstation kaba1 = new Weatherstation("Kaba1", "4.40,-57.22");
+//        Weatherstation nyun1 = new Weatherstation("Nyun1", "4.92,-55.54");
+//        Weatherstation pusu1 = new Weatherstation("Pusu1", "4.39,-55.79");
+//        Weatherstation dju1 = new Weatherstation("Dju1", "4.00,-55.47");
+//        Weatherstation poki2 = new Weatherstation("Poki2", "4.37,-55.40");
+//        Weatherstation benz1 = new Weatherstation("Benz1", "3.85,-54.22");
+//        Weatherstation langa1 = new Weatherstation("Langa1", "4.99,-54.44");
+//        Weatherstation stoel3 = new Weatherstation("Stoel3", "4.26,-54.48");
+//        Weatherstation ape3 = new Weatherstation("Ape3", "3.38,-55.40");
+//        Weatherstation ule1 = new Weatherstation("Ule1", "3.10,-54.54");
+//        Weatherstation amo1 = new Weatherstation("Amo1", "3.54,-57.63");
+//        Weatherstation ala2 = new Weatherstation("Ala2", "2.42,-56.53");
+//        Weatherstation sip1 = new Weatherstation("Sip1", "2.02,-56.12");
+//        Weatherstation tafel2 = new Weatherstation("Tafel2", "3.44,-56.28");
+
+//        weatherStationGraph.addVertex(apu2);    //0
+//        weatherStationGraph.addVertex(kaba1);   //1
+//        weatherStationGraph.addVertex(nyun1);   //2
+//        weatherStationGraph.addVertex(pusu1);   //3
+//        weatherStationGraph.addVertex(dju1);    //4
+//        weatherStationGraph.addVertex(poki2);   //5
+//        weatherStationGraph.addVertex(benz1);   //6
+//        weatherStationGraph.addVertex(langa1);  //7
+//        weatherStationGraph.addVertex(stoel3);  //8
+//        weatherStationGraph.addVertex(ape3);    //9
+//        weatherStationGraph.addVertex(ule1);    //10
+//        weatherStationGraph.addVertex(amo1);    //11
+//        weatherStationGraph.addVertex(ala2);    //12
+//        weatherStationGraph.addVertex(sip1);    //13
+//        weatherStationGraph.addVertex(tafel2);  //14
+
+//        double[] rainfallValues ={35.0, 33.7, 35.8, 4.7, 38.6, 7.9, 32.3, 9.1, 33.6, 6.6, 31.8, 34.8, 33.0, 5.8, 38.8};
